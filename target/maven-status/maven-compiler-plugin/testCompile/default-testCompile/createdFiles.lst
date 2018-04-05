@@ -1,0 +1,3 @@
+com\pkm\controller\TodoControllerTest.class
+com\pkm\config\ToDoAppApplicationTests.class
+com\pkm\repository\TodoRepositoryTest.class
