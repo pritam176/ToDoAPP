@@ -1,7 +1,0 @@
-com\pkm\config\CommandLineRunnerCustome.class
-com\pkm\entity\Todo.class
-com\pkm\repository\TodoRepository.class
-com\pkm\controller\TodoController.class
-com\pkm\config\SwaggerConfig.class
-com\pkm\config\ToDoAppApplication.class
-com\pkm\controller\HomeController.class
