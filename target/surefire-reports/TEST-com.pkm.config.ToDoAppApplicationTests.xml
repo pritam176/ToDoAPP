@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="com.pkm.config.ToDoAppApplicationTests" time="0.071" tests="1" errors="0" skipped="0" failures="0">
+=======
+<testsuite name="com.pkm.config.ToDoAppApplicationTests" time="0.066" tests="1" errors="0" skipped="0" failures="0">
+>>>>>>> fd4f67170f4eb20e85fc75c9943623c1f62b77fe
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_67\jre\bin"/>
     <property name="java.vm.version" value="24.65-b04"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
+<<<<<<< HEAD
     <property name="maven.multiModuleProjectDirectory" value="D:\GITHUB\ToDoAPP"/>
+=======
+    <property name="maven.multiModuleProjectDirectory" value="D:\Repo\poc\poc\ToDoApp\ToDoApp"/>
+>>>>>>> fd4f67170f4eb20e85fc75c9943623c1f62b77fe
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +24,11 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<<<<<<< HEAD
     <property name="user.dir" value="D:\GITHUB\ToDoAPP"/>
+=======
+    <property name="user.dir" value="D:\Repo\poc\poc\ToDoApp\ToDoApp"/>
+>>>>>>> fd4f67170f4eb20e85fc75c9943623c1f62b77fe
     <property name="java.runtime.version" value="1.7.0_67-b01"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_67\jre\lib\endorsed"/>
@@ -60,5 +72,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
+<<<<<<< HEAD
   <testcase name="contextLoads" classname="com.pkm.config.ToDoAppApplicationTests" time="0.071"/>
+=======
+  <testcase name="contextLoads" classname="com.pkm.config.ToDoAppApplicationTests" time="0.066"/>
+>>>>>>> fd4f67170f4eb20e85fc75c9943623c1f62b77fe
 </testsuite>

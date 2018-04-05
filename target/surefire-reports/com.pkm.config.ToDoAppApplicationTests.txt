@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.pkm.config.ToDoAppApplicationTests
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.571 sec - in com.pkm.config.ToDoAppApplicationTests
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.109 sec - in com.pkm.config.ToDoAppApplicationTests
+>>>>>>> fd4f67170f4eb20e85fc75c9943623c1f62b77fe

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\GITHUB\ToDoAPP\src\main\java\com\pkm\config\ToDoAppApplication.java
 D:\GITHUB\ToDoAPP\src\main\java\com\pkm\controller\HomeController.java
 D:\GITHUB\ToDoAPP\src\main\java\com\pkm\config\CommandLineRunnerCustome.java
@@ -5,3 +6,12 @@ D:\GITHUB\ToDoAPP\src\main\java\com\pkm\repository\TodoRepository.java
 D:\GITHUB\ToDoAPP\src\main\java\com\pkm\config\SwaggerConfig.java
 D:\GITHUB\ToDoAPP\src\main\java\com\pkm\entity\Todo.java
 D:\GITHUB\ToDoAPP\src\main\java\com\pkm\controller\TodoController.java
+=======
+D:\Repo\poc\poc\ToDoApp\ToDoApp\src\main\java\com\pkm\config\SwaggerConfig.java
+D:\Repo\poc\poc\ToDoApp\ToDoApp\src\main\java\com\pkm\config\CommandLineRunnerCustome.java
+D:\Repo\poc\poc\ToDoApp\ToDoApp\src\main\java\com\pkm\controller\TodoController.java
+D:\Repo\poc\poc\ToDoApp\ToDoApp\src\main\java\com\pkm\config\ToDoAppApplication.java
+D:\Repo\poc\poc\ToDoApp\ToDoApp\src\main\java\com\pkm\controller\HomeController.java
+D:\Repo\poc\poc\ToDoApp\ToDoApp\src\main\java\com\pkm\entity\Todo.java
+D:\Repo\poc\poc\ToDoApp\ToDoApp\src\main\java\com\pkm\repository\TodoRepository.java
+>>>>>>> fd4f67170f4eb20e85fc75c9943623c1f62b77fe
