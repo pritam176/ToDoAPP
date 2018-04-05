@@ -1,0 +1,111 @@
+<html ng-app="todoApp">
+
+<head>
+<title>Todo Application</title>
+<link rel="stylesheet"
+	href="/webjars/bootstrap/3.3.7-1/css/bootstrap.css">
+<style type="text/css">
+touched: {
+	color: red;
+}
+</style>
+</head>
+
+<body ng-controller="TodoController as TodoCtrl" ng-cloak>
+	<div class="container">
+
+		<h2>Todo Form</h2>
+
+		<form role="form" name="form">
+			<div class="form-group">
+
+				<input type="text" class="form-control" name="name" ng-click="TodoCtrl.success=false"
+					ng-model="TodoCtrl.todo.name" placeholder="Name" required>
+				<div ng-show="form.name.$touched && form.name.$invalid"
+					class="alert-danger">The Name is Required</div>
+			</div>
+			<div class="form-group">
+
+				<input type="text" class="form-control" name="description"
+					ng-model="TodoCtrl.todo.description" placeholder="Description" ng-click="TodoCtrl.success=false"
+					required>
+				<div
+					ng-show="form.description.$touched && form.description.$invalid"
+					class="alert-danger">The Description Required</div>
+			</div>
+
+
+			<div class="form-group">
+				<label>Completed</label> <input type="checkbox"
+					ng-model="TodoCtrl.todo.completed" />
+
+			</div>
+
+
+
+			<button id="btnAddTodo" ng-disabled="form.$invalid"
+				class="btn btn-success" type="button" ng-click="TodoCtrl.addTodo()">Add</button>
+				
+				<div class="form-group">
+				<span
+							class="btn-success" ng-show="TodoCtrl.success"> Successfully Saved</span>
+
+			</div>
+
+		</form>
+		<!-- /input-group -->
+
+
+		<div class="panel panel-info">
+			<div class="panel-heading">List of Todos</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<td>Name</td>
+						<td>Description</td>
+						<td>Completed</td>
+						<td align="right">Action</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="todo in TodoCtrl.todos">
+						<td><span ng-bind="todo.name" ng-hide="todo.editing"></span>
+
+							<input type="text" class="form-control" ng-model="todo.name"
+							ng-show="todo.editing" /></td>
+						<td><span ng-bind="todo.description" ng-hide="todo.editing"></span>
+
+							<input type="text" class="form-control"
+							ng-model="todo.description" ng-show="todo.editing" /></td>
+						<td><input type="checkbox" ng-checked="todo.completed"
+							ng-click="TodoCtrl.setCompleted(todo)"> <span
+							class="btn-success" ng-show="todo.completed"> COMPLETED</span>
+							<span
+							class="btn-warning" ng-hide="todo.completed"> PENDING</span></td>
+						<td align="right">
+							<button class="btn btn-warning" type="button"
+								ng-click="TodoCtrl.editTodo(todo)" ng-hide="todo.editing">Edit</button>
+							<button class="btn btn-warning" type="button"
+								ng-click="TodoCtrl.updateTodo(todo)" ng-show="todo.editing">Update</button>
+							<button class="btn btn-danger" type="button"
+								ng-click="TodoCtrl.deleteTodo(todo.id)">Delete</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<script src="/webjars/jquery/3.1.1-1/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+	<script src="/webjars/angularjs/1.6.2/angular.min.js"></script>
+	<script src="/webjars/angularjs/1.6.2/angular-route.js"></script>
+
+	<script src="./js/app.js"></script>
+	<script src="./js/controller/todo.controller.js"></script>
+	<script src="./js/service/todo.service.js"></script>
+	<script src="./js/service/appconstant.service.js"></script>
+
+</body>
+
+</html>
